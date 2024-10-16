@@ -6,7 +6,7 @@ import { Button } from "./ui/moving-border";
 const HeroSection = () => {
   return (
     <div className="">
-      <h1 className=" text-white  mt-64 ml-42 text-center text-6xl font-bold ">Explore the best courese</h1>
+      <h1 className=" text-white  mt-64 ml-42 text-center text-6xl font-bold ">Explore the best Courses</h1>
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="pink"
@@ -17,7 +17,7 @@ const HeroSection = () => {
         <Link href={"/courses"}
         >
         <Button>
-          Couses
+          Explore Courses
         </Button>
         </Link>
       </div>
