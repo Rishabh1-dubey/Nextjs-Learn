@@ -2,13 +2,13 @@
     "courses": [
       {
         "id": 1,
-        "title": "Guitar Fundamentals",
+        "title": "React fundamental for beginner",
         "slug": "guitar-fundamentals",
-        "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
+        "description": "Learn the basis of Javascript before Starting React .",
         "price": 99.99,
         "instructor": "John Doe",
         "isFeatured": true,
-        "image": "/courses/guitar.jpg" 
+        "image": "https://media.licdn.com/dms/image/v2/D5622AQHhhkyz-GzBBw/feedshare-shrink_800/feedshare-shrink_800/0/1702634107004?e=2147483647&v=beta&t=nfj23sQVkUJnuEQzUQ3ulZI6PiJsXybo6h14jlmsGO0" 
       },
       {
         "id": 2,
@@ -22,13 +22,13 @@
       },
       {
         "id": 3,
-        "title": "Advanced Vocal Techniques",
+        "title": "Learn TypeScript",
         "slug": "advanced-vocal-techniques",
-        "description": "Enhance your singing with advanced vocal techniques for intermediate to advanced learners.",
+        "description": "Dive into TypeScrpt with this introductory course on the basics of TypeScript engineering and mixing",
         "price": 119.99,
         "instructor": "Emily Johnson",
         "isFeatured": true,
-        "image": "/courses/vocalist.jpg" 
+        "image": "https://pbs.twimg.com/profile_images/1724344976715468800/MasktpKz_400x400.jpg" 
       },
       {
         "id": 4,
@@ -52,13 +52,13 @@
       },
       {
         "id": 6,
-        "title": "Music Production Fundamentals",
+        "title": "Learn Nextjs",
         "slug": "music-production-fundamentals",
-        "description": "Dive into music production with this introductory course on the basics of sound engineering and mixing.",
+        "description": "Hii Everyone in this course we going go deep dive into NextJs",
         "price": 149.99,
         "instructor": "Alex Wilson",
         "isFeatured": true,
-        "image": "/courses/music-prod.jpg"
+        "image": "https://www.piyushgarg.dev/_next/image?url=%2Fimages%2Favatar.png&w=1080&q=75"
       },
       {
         "id": 7,
@@ -72,13 +72,13 @@
       },
       {
         "id": 8,
-        "title": "Electronic Music Production",
+        "title": "Learn WebDevlopment",
         "slug": "electronic-music-production",
-        "description": "Create compelling electronic music with our course designed for beginners to advanced users.",
+        "description": "Create compelling website with our course designed for beginners to advanced users.",
         "price": 169.99,
         "instructor": "Luke Harris",
         "isFeatured": true,
-        "image": "/courses/music-prod.jpg"
+        "image": "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg"
       },
       {
         "id": 9,
@@ -92,13 +92,13 @@
       },
       {
         "id": 10,
-        "title": "Blues Guitar Techniques",
+        "title": "Learn web3 with Advances Techie",
         "slug": "blues-guitar-techniques",
-        "description": "Discover the techniques of blues guitar to add soul and depth to your playing.",
+        "description": "Discover the techniques of web3 to add soul and depth to your coding.",
         "price": 189.99,
         "instructor": "Ethan Moore",
         "isFeatured": true,
-        "image": "/courses/blues.jpg"
+        "image": "https://appx-wsb-gcp-mcdn.akamai.net.in/paid_course3/2023-11-10-0.3523174787735883.jpeg"
       }
     ]
   }
