@@ -3,6 +3,9 @@ import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import WhychooseUs from "@/components/WhychooseUs";
+import { Testnomial } from "@/components/Testnomial";
+import UpcomingWebniar from "@/components/UpcomingWebniar";
+import Instractor from "@/components/Instractor";
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
        <HeroSection/>
        <FeaturedCourses/>
        <WhychooseUs/>
+    <Testnomial/>
+    <UpcomingWebniar/>
+    <Instractor/>
       
     </main>
   );
