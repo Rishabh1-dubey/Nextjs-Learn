@@ -1,9 +1,8 @@
-import mongoose, { connection } from "mongoose";
-import { root } from "postcss";
+import mongoose from "mongoose";
 
 export async function connect() {
   try {
-    mongoose.connect(process.env.MONGO_URL!);
+    await mongoose.connect(process.env.MONGO_URL!);
     const connection = mongoose.connection;
     connection.on("Connected", () => {
       console.log("MongoDB connected");
