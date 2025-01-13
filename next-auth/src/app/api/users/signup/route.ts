@@ -2,7 +2,7 @@
 import { connect } from "@/dbconfig/dbConfig";
 import { sendEmail } from "@/helpers/mailers";
 import User from "@/models/userModels";
-import becryptjs from "bcryptjs";
+import bcryptjs from "bcryptjs";
 import { NextRequest, NextResponse } from "next/server";
 
 
@@ -18,13 +18,14 @@ export async function POST(request: NextRequest) {
     //check if user already exist
     const user = await User.findOne({email});
     if (user) {
-      return NextResponse.json({ error: "User alreasdy Exist" }, { status: 400 }
+      return NextResponse.json({ error: "User alreasdy Exist" },
+         { status: 400 }
       )
     }
 
     //hash password
-    const salt = await becryptjs.genSalt(10);
-    const hashedPassword = await becryptjs.hash(password, salt);
+    const salt = await bcryptjs.genSalt(10);
+    const hashedPassword = await bcryptjs.hash(password, salt);
 
     const newUser = new User({
       username,
@@ -32,7 +33,7 @@ export async function POST(request: NextRequest) {
       password: hashedPassword,
     });
 
-    const savedUser = newUser.save();
+    const savedUser =  await newUser.save();
     console.log(savedUser);
 
 
@@ -46,8 +47,10 @@ return NextResponse.json({
 })
 
   } catch (error:any) {
-    return NextResponse.json({ message: "Error while fetching data" }),
+    console.log(error)
+    return NextResponse.json(
+      { message: "Error while fetching data",error:error.message },
       { status: 500 }
-    
+    ) 
   }
 }
