@@ -6,7 +6,7 @@ import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 connect();
-export async function Post(request: NextRequest) {
+export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json();
     const { email, password } = reqBody;
@@ -15,7 +15,7 @@ export async function Post(request: NextRequest) {
 
     if (!user) {
       return NextResponse.json(
-        { error: "Not able to find Your useer" },
+        { error: "Not able to find Your user" },
         { status: 400 }
       );
     }
@@ -40,6 +40,7 @@ export async function Post(request: NextRequest) {
       expiresIn: "1h",
     });
     const response = NextResponse.json({
+
       message: "User loggedIn successfully",
       status: 200,
       success: true,
