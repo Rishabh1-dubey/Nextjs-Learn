@@ -14,6 +14,6 @@ export async function POST(request : NextRequest) {
     // check if there is no user
     return NextResponse.json({
         message:"User found",
-        data :user
+        data : user
     })
 }
