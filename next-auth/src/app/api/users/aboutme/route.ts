@@ -8,6 +8,7 @@ connect()
 
 
 export async function POST(request : NextRequest) {
+   try {
     const userId = await getDataFromToken(request);
     const user = await User.findOne({_id:userId}).select("-password")
 
@@ -16,4 +17,7 @@ export async function POST(request : NextRequest) {
         message:"User found",
         data : user
     })
+   } catch (error) {
+    console.log(error)
+   }
 }

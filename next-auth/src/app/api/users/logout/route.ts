@@ -1,5 +1,8 @@
+import { connect } from "@/dbconfig/dbConfig";
 import { NextRequest, NextResponse } from "next/server";
 
+
+connect()
 
 export async function GET(request:NextRequest){
 try {
@@ -16,4 +19,4 @@ response.cookies.set("token" , "" ,{
 } catch (error:any) {
     return NextResponse.json({error:error.message},{status:500})
 }
-}
+} 
