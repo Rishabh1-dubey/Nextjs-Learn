@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -76,6 +77,8 @@ const Page = () => {
 
       <button onClick={onSignup} className=" py-4 px-4 bg-slate-700 rounded-2xl hover:bg-slate-400 cursor-pointer hover:text-black">{buttonDisabled ? "no signUP" :"signup"}</button>
       </div>
+
+      <Link href="/login">Visit to <span className="underline text-blue-700">Login page</span></Link>
     </div>
   );
 };
